@@ -1,0 +1,26 @@
+{
+  "name": "toolkit",
+  "version": "1.0.0",
+  "description": "function collections",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angularbinh2020/toolkit.git"
+  },
+  "keywords": [
+    "javascript",
+    "toolkit"
+  ],
+  "author": "fhnib1995",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angularbinh2020/toolkit/issues"
+  },
+  "homepage": "https://github.com/angularbinh2020/toolkit#readme",
+  "dependencies": {
+    "typescript": "^5.4.3"
+  }
+}
