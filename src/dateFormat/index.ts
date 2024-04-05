@@ -1,4 +1,4 @@
-import { isString } from "./isString";
+import { isString } from "../isString";
 
 enum Format {
   DD = "DD",
@@ -13,6 +13,15 @@ const getStringNumber = (val: number) => {
   return val > 9 ? val : "0" + val;
 };
 
+/**
+ * @example format = "DD/MM/YYYY hh:mm:ss" => "30/05/2024 13:20:30"
+ * @description DD : days of Month (01 - 31)
+ * @description MM: month of year (01 - 12)
+ * @description YYYY: year
+ * @description hh: hours (24h format)
+ * @description mm: minutes
+ * @description ss: seconds
+ */
 export const dateFormat = (input: string | Date, format: string) => {
   const dateObj = isString(input) ? new Date(input) : (input as Date);
   if (isNaN(dateObj.getDate())) return format;

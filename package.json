@@ -2,9 +2,12 @@
   "name": "toolkit",
   "version": "1.0.0",
   "description": "function collections",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npx tsc"
   },
   "repository": {
     "type": "git",
@@ -12,7 +15,14 @@
   },
   "keywords": [
     "javascript",
-    "toolkit"
+    "toolkit",
+    "call phone number",
+    "copy to clipboard",
+    "date format",
+    "debounce",
+    "format bytes",
+    "remove accents",
+    "money display"
   ],
   "author": "fhnib1995",
   "license": "ISC",
@@ -21,6 +31,9 @@
   },
   "homepage": "https://github.com/angularbinh2020/toolkit#readme",
   "dependencies": {
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.4"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5"
   }
 }
