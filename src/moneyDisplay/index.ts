@@ -2,6 +2,9 @@ const isMoneyValue = (money: number | string) =>
   (typeof money === "string" && money.trim() && !isNaN(+money)) ||
   typeof money === "number";
 
+/**
+ * @example moneyDisplay(10000000) => "10,000,000"
+ */
 export const moneyDisplay = (moneyValue: number | string) => {
   let money = moneyValue;
   if (isMoneyValue(money)) {

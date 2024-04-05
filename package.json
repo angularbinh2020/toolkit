@@ -1,5 +1,5 @@
 {
-  "name": "toolkit",
+  "name": "fhnib-toolkit",
   "version": "1.0.0",
   "description": "function collections",
   "main": "dist/index.js",
